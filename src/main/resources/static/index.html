@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCrave | Campus Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CampusCrave 🍔</h1>
+        <p>Cravings solved, queues avoided!</p>
+        
+    <nav class="site-nav">
+        <a href="/">Food Menu</a>
+        <a href="#orders-list">My Orders</a>
+        <a href="#tracking-result">Track Order</a>
+        <a href="/staff.html">Staff Dashboard</a>
+    </nav>
+
+    </header>
+
+    
+<main>
+    <h2>Today's Menu</h2>
+    <div id="food-menu">Loading menu...</div>
+
+    <section class="orders-section">
+        <h2>My Orders</h2>
+        <button id="view-orders">View My Orders</button>
+        <div id="orders-list"></div>
+    </section>
+
+    
+<section class="orders-section">
+    <h2>Track Your Order 🔎</h2>
+
+    <p>Enter your Order ID to check its latest status.</p>
+
+    <div class="tracking-form">
+        <input
+            type="number"
+            id="tracking-id"
+            placeholder="Enter Order ID"
+            min="1"
+        >
+        <button id="track-order">Track Order</button>
+    </div>
+
+    <div id="tracking-result"></div>
+</section>
+
+</main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
